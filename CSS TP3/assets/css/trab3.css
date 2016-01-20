@@ -1,0 +1,74 @@
+body{
+	text-align: center;
+	background-color: #5b0862;
+	width: 100%;
+}
+#logo{
+	float: left;
+}
+#nav_menu{
+	float: right;
+}
+.menu{
+	font-family: "Raleway, Verdana";
+	text-decoration: none;
+	color: white;
+}
+#space{
+	padding-right: 20px;
+}
+.slide{
+	width: 100%;
+	display: block;
+}
+.search{
+	z-index: 100;
+	display: inline-block;
+	width: 800px;
+}
+.buscador{}
+#principal{}
+.buscar{}
+.4c{
+	width: 1000px ;
+	height: 300px;
+}
+.columna{
+	text-align: center;
+	padding-right: 30px;
+	display: inline-block;
+}
+.3c{}
+.col_lf{}
+.col_rg{}
+.col_ct{}
+.et_precio{}
+.buy{}
+.precio{
+	border-width: 1px;
+	border:solid;
+	width: 200px;
+	height: 300px;
+	text-align: center;
+	margin-left: 30px;
+}
+#anuncio{}
+#footer{}
+#info_footer{}
+#menu_footer{}
+h2{
+
+}
+h4{
+
+}
+
+footer{
+	height: 150px;
+	width: 100%;
+	background-color: grey;
+}
+#logo{
+	width: 150px;
+	
+}
