@@ -56,19 +56,15 @@ ul {
 .columna4{
 	text-align: center;
 }
-.iconos{
-	transform:scale(1.25);
-}
 
-@keyframes iconos{
-	0% {background-color:white;}/*from*/
-	100% {background-color: blue;}/*to*/
+@keyframes movimiento{
+	0% {transform:scale(1);}/*from*/
+	100% {transform:scale(1.25);}/*to*/
 }
 /*Aplicación*/
 .iconos:hover{
-	animation-name:iconos;
-	animation-duration:10s;
-	animation-delay:1s;/*cuanto se demora en empezar*/
+	animation-name: movimiento;
+	animation-duration:1.3s;
 	animation-timing-function:ease-in-out;
 }
 
