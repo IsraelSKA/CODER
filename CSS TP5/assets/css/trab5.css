@@ -1,0 +1,163 @@
+body{
+	font-family: 'Raleway','Open Sans',sans-serif;
+	background-color: #00020D;
+	width: 100%;
+	color: white;
+} 
+ul { 
+	list-style: none; 
+}
+#cabecera{
+	width: 100%;
+	height:100px;
+}
+#logo{
+	float: left;
+	padding-left: 20px;
+}
+#nav_menu{
+	float: right;
+	padding-top: 30px;
+	padding-right: 30px;
+	display: flex;
+	flex-direction: row;
+}
+.menu{
+	text-decoration: none;
+	color: white;
+	padding-right: 20px;
+}
+.slide{
+	width: 100%;
+	z-index: -1;
+}
+.search{
+	margin-top: -15px;
+	margin-bottom: 80px;
+	display: flex;
+	flex-direction:row;
+	justify-content:center;
+}
+#buscador{
+	width: 880px;
+	height: 25px;
+}
+.buscar{
+	height: 30px;
+	width: 50px;
+}
+
+.c4{
+	display: flex;
+	flex-direction:row;
+	margin-bottom: 80px;
+	justify-content:space-around;
+}
+.columna4{
+	text-align: center;
+}
+.iconos{
+	transform:scale(1.25);
+}
+
+@keyframes iconos{
+	0% {background-color:white;}/*from*/
+	100% {background-color: blue;}/*to*/
+}
+/*Aplicación*/
+.iconos:hover{
+	animation-name:iconos;
+	animation-duration:10s;
+	animation-delay:1s;/*cuanto se demora en empezar*/
+	animation-timing-function:ease-in-out;
+}
+
+.encabezados{
+	margin-bottom: 80px;
+}
+.c3{
+	display: flex;
+	flex-direction:row;
+	margin-bottom: 80px;
+	justify-content:center;
+}
+.columna3d{
+	text-align: right;
+	padding-right: 20px;
+}
+p{
+	line-height: 1.2em;
+}
+#cel{
+	margin-left: 35px;
+	margin-right: 35px;
+}
+.columna3i{
+	padding-left: 20px;
+}
+.icel_icon{
+	padding-bottom: 70px;
+}
+
+.ventas{
+	width: 200px;
+	height: 300px;
+	background-color: #350C40;
+	text-align: center;
+}
+.articulos{
+	padding-bottom: 15px;
+	margin-left: 55px;
+	margin-right: 50px;
+	text-align: center;
+}
+.buy{}
+.precio{
+	border-style: solid;
+	border-color: white;
+	border-width: 0px 0px 1px 0px;
+	padding-bottom: 20px;
+	margin-right: 70px;
+	margin-left: 70px;
+	font-size: 30px;
+	font-weight: bolder;
+}
+footer{
+	width: 100%;
+	height: 400px;
+}
+h2{
+	font-weight: bolder;
+	text-align: center;
+	color: #BF7EB4;
+}
+h4{
+	font-weight: lighter;
+	text-align: center;
+	color: #731F6D;
+}
+.anuncio{
+	width: 100%;
+	height: 180px;
+	background-color: #030526;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	font-size: 24px;
+	font-weight: bolder;
+	text-decoration: none;
+}
+footer{
+	height: 60px;
+	width: 100%;
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+}
+#nav_menu_footer{
+	float: right;
+	padding-right: 30px;
+	display: flex;
+	flex-direction: row;
+}
