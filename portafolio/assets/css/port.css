@@ -59,7 +59,8 @@ nav ul li{
 	display: inline-block;
 }
 .menu{
-	padding-left: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 .up{
 	padding-left: 50px;
@@ -81,6 +82,8 @@ header{
 	width: 50%;
 	padding-left: 20px;
 	padding-right: 40px;
+	font-size: 15px;
+	text-align: justify;
 }
 .trescolumnas{
 	width: 100%;
@@ -156,4 +159,78 @@ footer{
 }
 #footer_cont img{
 	margin: 5px 10px 0px 0px;
+}
+@media screen and (max-width: 1024px){
+	body{
+		font-size: 13pt;
+	}
+	nav{
+		flex-direction:column;
+		justify-content:center;
+	}
+	ul { 
+		justify-content:center;
+	}
+	#nombre{
+		margin-left: 0px;
+	}
+	#cargo{
+		display: none;
+	}
+	.search{
+		display: none;
+	}
+	.up{
+		display: none;
+	}
+	header{
+		padding-top: 105px;
+}
+	.doscolumnas{
+		justify-content:center;
+		flex-direction:column;
+	}
+	.doscolumnas div{
+		flex-direction:row;
+	}
+	.columnlf{
+		display: none;
+	}
+	.columnrg{
+		width: 80%;
+		padding-left: 0px;
+		padding-right: 0px;
+		font-size: 15px;
+	}
+	.proyecto_title{
+		font-size: 18px;
+	}
+	.proyecto_subtitle{
+		font-size: 15px;
+	}
+	#footer_cont{
+		display: flex;
+		justify-content:center;
+		float: none;
+		padding-right: 0px;
+	}
+	.trescolumnas{
+		justify-content:center;
+	}
+	.proyecto{
+		width: 90%;
+		height: auto;
+		border-width: 1px;
+		padding-top: 0px;
+		flex-direction:column;
+		margin: 0px 0px 20px 0px;
+		justify-content:center;
+	}
+	.scale{
+		transform:scale(0.7);
+		z-index: -1;
+	}
+	.proy_img{
+		margin: 0px 10px 0px 0px;
+	}
 }
