@@ -1,0 +1,191 @@
+$fondocolor: #00020D
+$fuentecolor: white
+$fuenteprinc: Raleway,Open Sans,sans-serif
+$ventas:#350C40
+@mixin bloquehc()
+	display: flex
+	flex-direction: row
+
+@mixin bloquev()
+	display: flex
+	flex-direction: column
+
+@mixin bloqueju-al()
+	align-items: center
+	justify-content: space-between
+
+body
+	font: 14pt $fuenteprinc
+	background-color: #00020D
+	width: 100%
+	color: $fuentecolor
+ul 
+	list-style: none 
+li
+	margin: auto
+nav 
+	width: 100%
+	height: 120px
+	@include bloquehc()
+	@include bloqueju-al()
+	ul li
+		display: inline-block
+#logo
+	float: left
+	padding-left: 20px
+.menu
+	text-decoration: none
+	color: $fuentecolor
+	padding-right: 20px
+	margin-top: 40px
+.slide
+	width: 100%
+	z-index: -1
+.search
+	margin-top: -15px
+	margin-bottom: 80px
+	@include bloquehc()
+#buscador
+	width: 880px
+	height: 25px
+.buscar
+	height: 30px
+	width: 50px
+	font: 13pt $fuenteprinc
+.c4
+	@include bloquehc()
+	margin-bottom: 80px
+	justify-content: space-around
+.columna4
+	text-align: center
+
+@keyframes movimiento
+	0% 
+		transform: scale(1)
+	50% 
+		transform: scale(1.25)
+	100% 
+		transform: scale(1)
+
+.iconos:hover
+	animation-name: movimiento
+	animation-duration: 1.3s
+	animation-timing-function: ease-in-out
+
+.encabezado
+	width: 100%
+	height: 200px
+	padding-top: 60px
+	background-image: url(../img/fondo2.png)
+.c3
+	@include bloquehc()
+	margin-bottom: 80px
+	justify-content: center
+.columna3d
+	text-align: right
+	padding-right: 20px
+p
+	line-height: 1.2em
+#cel
+	margin-left: 35px
+	margin-right: 35px
+.columna3i
+	padding-left: 20px
+.icel_icon
+	padding-bottom: 60px
+.icel_icon1
+	padding-bottom: 60px
+.ventas
+	width: 200px
+	height: 380px
+	margin-top: -60px
+	background-color: $ventas
+	text-align: center
+	@include bloquev()
+	justify-content: center
+.articulos
+	padding-bottom: 15px
+	text-align: center
+.buy
+	margin-bottom: 15px
+.precio
+	border-style: solid
+	border-color: white
+	border-width: 0px 0px 1px 0px
+	padding-bottom: 15px
+	margin-right: 70px
+	margin-left: 70px
+	font: 30px $fuenteprinc
+	font-weight: bolder
+h2
+	font-weight: bolder
+	color: #BF7EB4
+	text-align: center
+h4
+	font-weight: lighter
+	color: #ffffff
+	text-align: center
+	margin-bottom: 80px
+.anuncio
+	width: 100%
+	height: 180px
+	background-color: #030526
+	@include bloquehc()
+	align-items: center
+	justify-content: center
+	font: 24px $fuenteprinc
+	font-weight: bolder
+	text-decoration: none
+footer
+	height: 60px
+	width: 100%
+	display: flex
+	@include bloqueju-al()
+	ul
+		float: right
+	li
+		display: inline-block
+.redes
+	padding-left: 30px
+#nav_menu_footer
+	padding-right: 30px
+
+@media screen and (max-width: 1024px)
+body
+	font-size: 16pt
+.c4
+	flex-wrap: wrap
+.columna4 p 
+	display: none
+#cel
+	display: none
+.columna3d
+	@include bloquev()
+.columna3d p
+	orden: 2 
+.icel1
+	@include bloquev()
+	img
+		orden: 1
+.icel2
+	@include bloquev()
+	img
+		orden: 3
+.columna3i
+	@include bloquev()
+	p
+		orden: 4
+.c3
+	flex-wrap: wrap
+.ventas
+	transform: scale(0.7)
+	width: 50%
+.articulos
+	padding-bottom: 15px
+button
+	padding: 10px
+	font-size: 14pt $fuenteprinc
+.anuncio
+	height: 10px
+	p
+		display: none
