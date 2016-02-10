@@ -1,0 +1,22 @@
+.thumbnail img{
+	width: 340px;
+	height: 200px;
+}
+.thumbnail .caption{
+	    text-align: justify;
+}
+.navbar{
+	margin-bottom: 0px;
+	border-radius: 0px;
+}
+header{
+}
+.jumbotron{
+	border-radius: 0px;
+}
+.thumbnail{
+	border: 0px;
+}
+footer{
+	margin-top: 80px;
+}

@@ -161,6 +161,9 @@ footer{
 	justify-content:space-between;
 	align-items:center;
 }
+.rrss{
+	padding-right: 20px;
+}
 #nav_menu_footer{
 	float: right;
 	padding-right: 30px;
