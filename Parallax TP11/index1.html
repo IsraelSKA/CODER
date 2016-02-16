@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Demo para CSS MAsk usando background-attachment: fixed;</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!--Js code-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('section[data-type="parallax_section"]').each(function(){
+          var $bgobj = $(this);
+            $(window).scroll(function() {
+              $window = $(window);
+              var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+              var coords = '50% '+ yPos + 'px';
+              $bgobj.css({ backgroundPosition: coords });
+          });
+        });
+      });
+    </script>
+
+  </head>
+  <body>
+    <header>
+      <div class="separador_small">
+        <h3>Efecto máscara con CSS</h3>
+      </div>
+    </header>
+    <section data-type="parallax_section" data-speed="10">
+      <div class="contenido right img_01">
+      <div class="smallscreen">
+        <image src="img/img2.png"></image>
+      </div>
+      <h2>Haz Scroll hacia abajo para sorprenderte! </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nibh diam, venenatis sed dolor quis, lobortis facilisis lectus. Vivamus gravida iaculis convallis. Proin posuere justo id elit ultrices lacinia. Etiam lobortis sollicitudin commodo. Donec quis lacinia est. Nulla facilisi. Nulla facilisi. Vestibulum placerat purus magna, eu vulputate neque eleifend nec. Quisque mollis turpis at ipsum tincidunt semper. Nam volutpat diam eget purus lobortis <a href=""></a>liquet.</p>
+      <p>Proin volutpat aliquet mattis. Vestibulum molestie fermentum molestie. In posuere venenatis elementum. Nam dictum ut ligula vestibulum malesuada. Nullam sed consectetur metus. Nunc sit amet odio non magna sagittis euismod. Proin tincidunt lorem at egestas interdum. Praesent metus lacus, mollis vitae leo eu, malesuada tincidunt arcu. Fusce sed tincidunt turpis, eget gravida neque. Nunc placerat velit ut ultrices porttitor. Etiam et sapien pharetra, eleifend nisi et, sollicitudin nisi. Ut luctus malesuada turpis vel blandit. Nam vel scelerisque elit, vitae pulvinar nisl.</p>
+      ing elit. Pellentesque nibh ipsum, placerat nec erat et, gravida ultrices ante. Etiam non ante vel eros pharetra pulvinar.</p>
+    </div>
+    </section>
+    <section data-type="parallax_section" data-speed="10">
+      <div class="separador">
+        <h3>Segunda Sección</h3>
+      </div>
+      <div class="contenido left img_02">
+        <div class="smallscreen">
+          <img  src="img/img1.png"></img>
+        </div>
+        <h2>Un efecto simple y atractivo usando sí lo CSS</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nibh diam, venenatis sed dolor quis, lobortis facilisis lectus. Vivamus gravida iaculis convallis. Proin posuere justo id elit ultrices lacinia. Etiam lobortis sollicitudin commodo. Donec quis lacinia est. Nulla facilisi. Nulla facilisi. Vestibulum placerat purus magna, eu vulputate neque eleifend nec. Quisque mollis turpis at ipsum tincidunt semper. Nam volutpat diam eget purus lobortis aliquet.</p>
+        <p>Proin volutpat aliquet mattis. Vestibulum molestie fermentum molestie. In posuere venenatis elementum. Nam dictum ut ligula vestibulum malesuada. Nullam sed consectetur metus. Nunc sit amet odio non magna sagittis euismod. Proin tincidunt lorem at egestas interdum. Praesent metus lacus, mollis vitae leo eu, malesuada tincidunt arcu. Fusce sed tincidunt turpis, eget gravida neque. Nunc placerat velit ut ultrices porttitor. Etiam et sapien pharetra, eleifend nisi et, sollicitudin nisi. Ut luctus malesuada turpis vel blandit. Nam vel scelerisque elit, vitae pulvinar nisl.</p>
+        <p>Nullam id iaculis turpis, ac vestibulum neque. Aliquam tellus massa, placerat commodo tristique dictum, egestas ut orci. Mauris semper magna ac odio sagittis, id egestas tortor consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed at ornare odio. Nam rutrum et velit sed auctor. Nulla accumsan dictum nulla quis ullamcorper. Proin nec nunc quis nulla dictum convallis quis ut justo. Nulla at mollis massa. Ut porta velit non malesuada sollicitudin. Pellentesque sed urna et elit laoreet consequat eu at nulla. Curabitur tristique augue ante, quis accumsan lectus tincidunt vel. Donec vitae nisl vitae tortor ultrices vestibulum. Maecenas et enim non felis lacinia sodales.</p>  
+    </div> 
+    </section>
+    <section data-type="parallax_section" data-speed="10">
+      <div class="separador">
+        <h3>Segunda Sección</h3>
+      </div>
+      <div class="contenido right img_03">
+        <div class="smallscreen">
+          <img  src="img/img3.png"></img>
+        </div>
+        <h2>Un efecto simple y atractivo usando sí lo CSS</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nibh diam, venenatis sed dolor quis, lobortis facilisis lectus. Vivamus gravida iaculis convallis. Proin posuere justo id elit ultrices lacinia. Etiam lobortis sollicitudin commodo. Donec quis lacinia est. Nulla facilisi. Nulla facilisi. Vestibulum placerat purus magna, eu vulputate neque eleifend nec. Quisque mollis turpis at ipsum tincidunt semper. Nam volutpat diam eget purus lobortis aliquet.</p>
+        <p>Proin volutpat aliquet mattis. Vestibulum molestie fermentum molestie. In posuere venenatis elementum. Nam dictum ut ligula vestibulum malesuada. Nullam sed consectetur metus. Nunc sit amet odio non magna sagittis euismod. Proin tincidunt lorem at egestas interdum. Praesent metus lacus, mollis vitae leo eu, malesuada tincidunt arcu. Fusce sed tincidunt turpis, eget gravida neque. Nunc placerat velit ut ultrices porttitor. Etiam et sapien pharetra, eleifend nisi et, sollicitudin nisi. Ut luctus malesuada turpis vel blandit. Nam vel scelerisque elit, vitae pulvinar nisl.</p>
+        <p>Nullam id iaculis turpis, ac vestibulum neque. Aliquam tellus massa, placerat commodo tristique dictum, egestas ut orci. Mauris semper magna ac odio sagittis, id egestas tortor consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed at ornare odio. Nam rutrum et velit sed auctor. Nulla accumsan dictum nulla quis ullamcorper. Proin nec nunc quis nulla dictum convallis quis ut justo. Nulla at mollis massa. Ut porta velit non malesuada sollicitudin. Pellentesque sed urna et elit laoreet consequat eu at nulla. Curabitur tristique augue ante, quis accumsan lectus tincidunt vel. Donec vitae nisl vitae tortor ultrices vestibulum. Maecenas et enim non felis lacinia sodales.</p>  
+    </div> 
+    </section>
+    <section data-type="parallax_section" data-speed="10">
+      <div class="separador">
+        <h3>Segunda Sección</h3>
+      </div>
+      <div class="contenido left img_04">
+        <div class="smallscreen">
+          <img  src="img/img4.png"></img>
+        </div>
+        <h2>Un efecto simple y atractivo usando sí lo CSS</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nibh diam, venenatis sed dolor quis, lobortis facilisis lectus. Vivamus gravida iaculis convallis. Proin posuere justo id elit ultrices lacinia. Etiam lobortis sollicitudin commodo. Donec quis lacinia est. Nulla facilisi. Nulla facilisi. Vestibulum placerat purus magna, eu vulputate neque eleifend nec. Quisque mollis turpis at ipsum tincidunt semper. Nam volutpat diam eget purus lobortis aliquet.</p>
+        <p>Proin volutpat aliquet mattis. Vestibulum molestie fermentum molestie. In posuere venenatis elementum. Nam dictum ut ligula vestibulum malesuada. Nullam sed consectetur metus. Nunc sit amet odio non magna sagittis euismod. Proin tincidunt lorem at egestas interdum. Praesent metus lacus, mollis vitae leo eu, malesuada tincidunt arcu. Fusce sed tincidunt turpis, eget gravida neque. Nunc placerat velit ut ultrices porttitor. Etiam et sapien pharetra, eleifend nisi et, sollicitudin nisi. Ut luctus malesuada turpis vel blandit. Nam vel scelerisque elit, vitae pulvinar nisl.</p>
+        <p>Nullam id iaculis turpis, ac vestibulum neque. Aliquam tellus massa, placerat commodo tristique dictum, egestas ut orci. Mauris semper magna ac odio sagittis, id egestas tortor consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed at ornare odio. Nam rutrum et velit sed auctor. Nulla accumsan dictum nulla quis ullamcorper. Proin nec nunc quis nulla dictum convallis quis ut justo. Nulla at mollis massa. Ut porta velit non malesuada sollicitudin. Pellentesque sed urna et elit laoreet consequat eu at nulla. Curabitur tristique augue ante, quis accumsan lectus tincidunt vel. Donec vitae nisl vitae tortor ultrices vestibulum. Maecenas et enim non felis lacinia sodales.</p>  
+    </div> 
+    </section>
+    <footer>
+      <div class="separador_small">
+        <h3>Sigueme en Twitter como <a>@Zaevega</a></h3>
+      </div>
+    </footer>
+</body>
+</html>
