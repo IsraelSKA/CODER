@@ -1,0 +1,176 @@
+ {
+box-sizing: border-box;
+}
+html {
+font-size: 1em;
+font-family: 'Roboto';
+background-color: #262626;
+color: #d9d9d9;
+}
+body {
+margin: 0;
+font-family: 'Roboto', sans-serif;
+}
+img {
+max-width: 100%;
+height: auto;
+}
+h1,h2,h3,h4,h5,h6 {
+font-family: 'Roboto';/*Obtenida de Google Fonts*/
+line-height: 1.313em;
+}
+h1 {
+font-size: 3em;
+margin: 0.563em 0;
+}
+h2 {
+font-size: 2.25em;
+margin: 0.625em 0;
+}
+h3 {
+font-size: 1.5em;
+margin: 1.313em 0;
+}
+h4 {
+font-size: 1.313em;
+margin: 1.313em 0;
+}
+h5 {
+font-size: 1.125em;
+margin: 1.313em 0;
+}
+h6 {
+font-size: 1em;
+margin: 0.75em 0;
+}
+
+.smallscreen {
+display: none;
+}
+.contenido {
+font-size: 1.875rem;
+color: #262626;
+background-size: 49% auto; /*El tamaño de la imagen de fondo con respecto al total del contenedor*/
+background-attachment: fixed; /*Nuestra propiedad mágica*/
+background-repeat: no-repeat; /*Con esto nos aseguramos que nuestra imagen sólo aparezca una vez en el contenedor*/
+text-align: justify;
+}
+
+.separador_small {
+font-size: 1.5em;
+padding: 0rem 1em;
+text-align: left;
+}
+.right {
+padding: 1.618em 6.472em 3.236em 50%;
+background-position: 0 50%;
+}
+.img_01 {
+background-color: #a7a7a7; /*Color de fondo para la primera sección*/
+background-image: url("../img/img1.png"); /*Imagen de fondo para la primera sección */
+}
+
+.separador {
+font-size: 1.875rem;
+padding:0;
+text-align: center;
+}
+.left {
+padding: 1.618em 50% 3.236em 6.472em;
+background-position: 100% 50%;
+}
+.img_02 {
+background-color: #1dbb95;
+background-image: url("../img/img2.png");/*La imagen coincide siempre con la que se enlaza en el contenedor con clase smallscreen de esta sección*/
+}
+
+.img_03 {
+background-color: #f5318f;
+background-image: url("../img/img3.png");
+}
+.img_04 {
+background-color: #F1A080;
+background-image: url("../img/img4.png");
+}
+
+@media (max-width: 106.25rem) {
+ .wrapper,
+ .separador {
+  font-size: 1.6875rem;
+  }
+}
+@media (max-width: 93.75rem) {
+ .contenido,
+  .separador {
+   font-size: 1.5rem;
+  }
+ .right {
+   padding: 1.618em 4.854em 1.618em 50%;
+ }
+ .left {
+   padding: 1.618em 50% 1.618em 4.854em;
+ }
+}
+@media (max-width: 81.25rem) {
+ .contenido,
+  .separador {
+   font-size: 1.3125rem;
+ }
+  .right {
+   padding: 1.618em 3.236em 1.618em 45%;
+   background-size: 44% auto;
+   background-position: 0 55%;
+ }
+ .left {
+    padding: 1.618em 45% 1.618em 3.236em;
+    background-size: 44% auto;
+    background-position: 100% 55%;
+  }
+}
+@media (max-width: 68.75rem) {
+  .contenido,
+  .separador {
+   font-size: 1.125rem;
+ }
+  .right {
+    padding: 1.618em 3.236em 1.618em 40%;
+    background-size: 39% auto;
+    background-position: 0 60%;
+ }
+ .left {
+    padding: 1.618em 40% 1.618em 3.236em;
+    background-size: 39% auto;
+    background-position: 100% 60%;
+ }
+}
+@media (max-width: 50rem) {
+  .smallscreen {
+  display: block;
+ }
+ .right {
+    padding: 1.618em 3.236em;
+    background-image: none;
+}
+  .left {
+    padding: 1.618em 3.236em;
+    background-image: none;
+   }
+   
+}
+@media (max-width: 31.25rem) {
+  .right {
+   padding: 1.618em 1.618em;
+  }
+  .left {
+  padding: 1.618em 1.618em;
+  }
+  
+  h1 {
+  font-size: 5em;
+  margin: 0.563em 0;
+  }
+}
+@media (max-width: 12rem) {
+  html {
+ min-width: 12rem;
+ }
