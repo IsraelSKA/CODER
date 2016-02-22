@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function calculadora(){
+			var resultado;
+			var operador1 = prompt("Ingrese el primer numero:");
+			if (operador1 != null) {
+        	var operador2 = prompt("Ingrese el segundo numero:");
+        		if(operador2 != null){
+        		var operacion = prompt("Elija una operación");
+        			if(operacion != null){
+        				switch(operacion){
+							case "suma": 
+								resultado = (parseInt(operador1)+ parseInt(operador2));
+								break;
+							case "resta":
+								resultado = operador1 - operador2;
+								break;
+							case "divide":
+								resultado = operador1 / operador2;
+								break;
+							case "multiplica":
+								resultado = operador1 * operador2;
+								break;
+						}
+        			}
+        			
+        		}
+			}
+			
+			alert(resultado);
+			return resultado;
+		}
+		
+		calculadora();
+
+
+	</script>
+</head>
+<body>
+		<!--var resultado = calculadora(,,"");
+		alert(resultado)-->
+
+</body>
+</html>

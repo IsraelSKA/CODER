@@ -111,13 +111,6 @@ p{
 	text-align: center;
 	padding: 10px 5px 10px 5px;
 }
-.articulos{
-	padding-bottom: 15px;
-	margin-left: 55px;
-	margin-right: 50px;
-	text-align: center;
-}
-.buy{}
 .precio{
 	border-style: solid;
 	border-color: white;
@@ -141,6 +134,9 @@ h4{
 	font-weight: lighter;
 	text-align: center;
 	color: #731F6D;
+}
+h3{
+	color: white;
 }
 .anuncio{
 	width: 100%;

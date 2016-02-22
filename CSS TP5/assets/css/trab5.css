@@ -15,6 +15,9 @@ h4{
 	text-align: center;
 	color: #731F6D;
 }
+h3{
+	color: white;
+}
 ul { 
 	list-style: none; 
 }
@@ -137,13 +140,6 @@ p{
 	padding: 10px 5px 10px 5px;
 	margin-top: -160px;
 }
-.articulos{
-	padding-bottom: 15px;
-	margin-left: 55px;
-	margin-right: 50px;
-	text-align: center;
-}
-.buy{}
 .precio{
 	border-style: solid;
 	border-color: white;
@@ -178,7 +174,11 @@ footer{
 	align-items:center;
 }
 .rrss{
-	padding-right: 20px;
+	padding-left: 20px;
+	margin-top: 20px;
+}
+.rrss img{
+	margin-top: 10px;
 }
 #nav_menu_footer{
 	float: right;

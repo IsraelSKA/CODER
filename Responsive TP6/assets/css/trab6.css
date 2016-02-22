@@ -5,6 +5,19 @@ body{
 	width: 100%;
 	color: white;
 } 
+h2{
+	font-weight: bolder;
+	text-align: center;
+	color: #BF7EB4;
+}
+h4{
+	font-weight: lighter;
+	text-align: center;
+	color: #731F6D;
+}
+h3{
+	color: white;
+}
 ul { 
 	list-style: none; 
 }
@@ -67,6 +80,10 @@ nav ul li{
 }
 .encabezados{
 	margin-bottom: 80px;
+	padding-top: 80px;
+	height: 200px;
+	color: white;
+	background-image: url(../img/fondo2.png);
 }
 @keyframes movimiento{
 	0% {transform:scale(1);}/*from*/
@@ -121,14 +138,8 @@ p{
 	background-color: #350C40;
 	text-align: center;
 	padding: 10px 5px 10px 5px;
+	margin-top: -160px;
 }
-.articulos{
-	padding-bottom: 15px;
-	margin-left: 55px;
-	margin-right: 50px;
-	text-align: center;
-}
-.buy{}
 .precio{
 	border-style: solid;
 	border-color: white;
@@ -142,16 +153,6 @@ p{
 footer{
 	width: 100%;
 	height: 400px;
-}
-h2{
-	font-weight: bolder;
-	text-align: center;
-	color: #BF7EB4;
-}
-h4{
-	font-weight: lighter;
-	text-align: center;
-	color: #731F6D;
 }
 .anuncio{
 	width: 100%;
@@ -173,7 +174,11 @@ footer{
 	align-items:center;
 }
 .rrss{
-	padding-right: 20px;
+	padding-left: 20px;
+	margin-top: 20px;
+}
+.rrss img{
+	margin-top: 10px;
 }
 #nav_menu_footer{
 	float: right;
@@ -181,46 +186,56 @@ footer{
 	display: flex;
 	flex-direction: row;
 }
-
 @media screen and (max-width: 1024px){
 	body{
-		font-size: 15pt;
+		font-size: 13pt;
+	}
+	nav {
+	height: 150px;
+	flex-direction:column;
+	align-items:center;
+	}
+	.search{
+	transform:scale(0.8);
+	margin-bottom: 40px;
 	}
 	.c4{
 	flex-wrap: wrap;
+	margin-bottom: 40px;
 	}
-	.columna4 p p{
-		display: none;
+	.iconos{
+		margin: 7px;
+	}
+	.c3{
+	flex-direction:column;
+	margin-bottom: 4;
 	}
 	.columnac{
 		display: none;
 	}
-	.columna3d{
-		display:flex;
-		flex-direction:column;
-	}
-	.columna3d p{
-		orden:2; 
-	}
-	
-	.c3{
-  	flex-wrap: wrap; 
+	.columnai{
+		text-align: left;
+		order:2;
 	}
 	.ventas{
-	transform:scale(0.7);
-	width: 50%;
+	margin-bottom: 160px;
+	margin-top: -140px;
 	}
-	.articulos{
-	padding-bottom: 15px;
-	}
-	button{
-		padding: 10px; /*es mas clickeable con el dedo*/
-		font-size: 14pt;
+	.ocultar{
+		display: none;
 	}
 	.anuncio{
-	height: 10px;
+		display: none;
 	}
-	.anuncio p{
-	display: none;
+	footer{
+	flex-direction:column;
+	margin-top: -100px;
+	}
+	.rrss{
+		padding-left: 0px;
+	}
+	#nav_menu_footer{
+		padding-right: 0px;
+
 	}
 }
