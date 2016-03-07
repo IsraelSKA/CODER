@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UFT-8">
+	<title>Piedra, papel y tijera</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/juego.css">
+	<script type="text/javascript" src="assets/js/juego.js"></script>
+</head>
+<body>
+	<header>
+		<h2>Bienvenido a piedra, papel y tijeras</h2>
+	</header>
+	<section>
+		</article>
+		<article class="opciones">
+			<img src="">
+			<input type="image" src="assets/img/pdr.png" name="piedra" class="cuadro">
+			<input type="image" src="assets/img/ppl.png" name="papel" class="cuadro">
+			<input type="image" src="assets/img/tjr.png" name="tijera" class="cuadro">
+			<div class="cuadro" name="jugador"></div>
+		</article>
+		<article class="opciones">
+			<input type="image" src="assets/img/pdr.png" name="piedra" class="cuadro">
+			<input type="image" src="assets/img/ppl.png" name="papel" class="cuadro">
+			<input type="image" src="assets/img/tjr.png" name="tijera" class="cuadro">
+			<div class="cuadro" name="computador"></div>
+		</article>
+	</section>
+
+<script type="text/javascript">
+	var jugador = prompt("Ingrese su nombre:");
+	var subtitle = document.createElement("h3");
+	var suerte = document.createTextNode("¡Buena suerte " + jugador + "!");
+	subtitle.appendChild(suerte);
+	var h2 = document.getElementsByTagName('h2')[0];
+	h2.appendChild(subtitle);
+
+	var piedra= document.getElementsByTagName("piedra");
+	piedra.onclick=;
+	
+</script>
+</body>
+</html>

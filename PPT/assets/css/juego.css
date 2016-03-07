@@ -1,0 +1,31 @@
+body{
+	background-image: url(../img/fondo.jpg);
+	color: white;
+}
+header{
+	text-align: center;
+	height: 120px;
+}
+
+.opciones{
+	display: flex;
+	justify-content:center;
+	flex-direction:row;
+}
+.cuadro{
+	width: 60px;
+	height: 60px;
+	padding: 10px;
+	border-radius: 3px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+	display: flex;
+	margin:2px;	
+}
+.cuadro :active{
+	border-color: red;
+};
+.cuadro:hover{
+	cursor: hand;
+};
