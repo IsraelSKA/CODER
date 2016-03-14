@@ -5,7 +5,7 @@ function aleatorio(){
 var piedra=0;
 var papel=1;
 var tijera=2;
-var opcionJugador=prompt("Elige piedra, papel o tijera");
+var opcionJugador=prompt("Elige piedra:0, papel:1 o tijera:2");
 var opcionComputador=aleatorio();
 
 var opciones=["piedra","papel","tijera"];
